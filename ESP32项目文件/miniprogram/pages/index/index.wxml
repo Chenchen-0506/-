@@ -1,0 +1,32 @@
+<view class="container">
+  <!-- LED 远程控制 -->
+  <view class="led-panel">
+    <view class="led-status {{connected ? 'ok' : 'bad'}}">
+      {{connected ? '● 已连接云端' : '○ 连接中…'}}
+    </view>
+    <view class="led-dot {{ledOn ? 'on' : ''}}"></view>
+
+    <view class="sensor-grid">
+      <view class="s-cell"><view class="s-label">温度</view><view class="s-val">{{temp}}°C</view></view>
+      <view class="s-cell"><view class="s-label">湿度</view><view class="s-val">{{hum}}%</view></view>
+      <view class="s-cell"><view class="s-label">重量</view><view class="s-val">{{weight}}g</view></view>
+      <view class="s-cell"><view class="s-label">水流</view><view class="s-val">{{flow}}L/min</view></view>
+      <view class="s-cell"><view class="s-label">红外</view><view class="s-val">{{irtemp}}°C</view></view>
+      <view class="s-cell"><view class="s-label">烟雾</view><view class="s-val">{{gas}}</view></view>
+      <view class="s-cell"><view class="s-label">光照</view><view class="s-val">{{lux}}</view></view>
+    </view>
+
+    <view class="recent-panel">
+      <view class="recent-title">最近数据（最多 5 条）</view>
+      <view wx:if="{{recentList.length === 0}}" class="recent-empty">暂无记录，等待 1 分钟生成</view>
+      <view wx:for="{{recentList}}" wx:key="time" class="recent-item">
+        <view class="recent-time">{{item.timeStr}}</view>
+        <view class="recent-vals">温度{{item.temp}}°C  湿度{{item.hum}}%  重量{{item.weight}}g  水流{{item.flow}}L/min  红外{{item.irtemp}}°C  烟雾{{item.gas}}  光照{{item.lux}}</view>
+      </view>
+    </view>
+
+    <switch checked="{{ledOn}}" bindchange="onToggle" color="#07C160" />
+  </view>
+</view>
+
+

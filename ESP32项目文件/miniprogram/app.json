@@ -1,13 +1,14 @@
 {
   "pages": [
     "pages/index/index",
+    "pages/recent/recent",
     "pages/example/index"
   ],
   "window": {
     "backgroundColor": "#F6F6F6",
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#F6F6F6",
-    "navigationBarTitleText": "云开发 QuickStart",
+    "navigationBarTitleText": "边净牧安·猪舍监测",
     "navigationBarTextStyle": "black"
   },
   "sitemapLocation": "sitemap.json",

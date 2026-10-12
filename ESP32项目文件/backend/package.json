@@ -1,0 +1,15 @@
+{
+  "name": "pig-backend",
+  "version": "0.1.0",
+  "description": "边净牧安后端: MQTT订阅(巴法云) + 数据库落库 + REST/WebSocket API",
+  "main": "src/server.js",
+  "scripts": {
+    "listen": "node src/mqttListener.js",
+    "start": "node src/server.js"
+  },
+  "dependencies": {
+    "express": "^5.2.1",
+    "mqtt": "^5.10.1",
+    "ws": "^8.21.3"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "最近数据",
+  "enablePullDownRefresh": true,
+  "backgroundTextStyle": "dark",
+  "usingComponents": {}
+}

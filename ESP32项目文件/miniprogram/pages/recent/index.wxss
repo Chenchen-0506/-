@@ -1,0 +1,63 @@
+/**recent.wxss**/
+page {
+  background-color: #f6f6f6;
+  padding-bottom: 60rpx;
+}
+
+.page {
+  font-family: PingFang SC;
+  padding: 24rpx;
+  box-sizing: border-box;
+}
+
+.tip {
+  font-size: 24rpx;
+  color: #888;
+  margin-bottom: 20rpx;
+}
+
+.empty {
+  text-align: center;
+  color: #999;
+  font-size: 26rpx;
+  padding: 60rpx 0;
+}
+
+.card {
+  background: #fff;
+  border-radius: 16rpx;
+  padding: 24rpx;
+  margin-bottom: 20rpx;
+  box-shadow: 0 2rpx 8rpx rgba(0, 0, 0, 0.04);
+}
+
+.card-time {
+  font-size: 22rpx;
+  color: #888;
+  margin-bottom: 12rpx;
+  padding-bottom: 12rpx;
+  border-bottom: 1rpx solid #f0f0f0;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12rpx 4rpx;
+  border-bottom: 1rpx solid #f5f5f5;
+}
+
+.row:last-child {
+  border-bottom: none;
+}
+
+.row-label {
+  font-size: 26rpx;
+  color: #666;
+}
+
+.row-val {
+  font-size: 28rpx;
+  font-weight: 600;
+  color: #1A1B1C;
+}

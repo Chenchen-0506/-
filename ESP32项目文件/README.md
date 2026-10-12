@@ -128,7 +128,7 @@
 |---|---|
 | 联网板 `sketch_sep24a.ino` | `ssid` / `password`（WiFi，2.4G、英文名）、`uid`（巴法云私钥） |
 | 小程序 `index.js` | `UID`（巴法云私钥，作 clientId） |
-| 小程序 `app.js` | `env`（云开发环境 ID） |
+| 小程序 `app.js` | `env`（云开发环境 ID `cloud1-d5gs39jihe019e38b`） |
 | 小程序 | 开发调试必须勾选"不校验合法域名" |
 
 ## 十、烧录与运行
@@ -156,11 +156,15 @@
 ESP32项目文件/
 ├── README.md                     # 本文件（当前为双板状态）
 ├── 双板架构与接线说明.md          # 双板接线/协议/验证详细说明
+├── 单板完整版备份_sketch_sep8b.ino  # 单板方案备份（可回退，BLE 已修可编译）
 ├── esp32_arduino/                # 双板固件同步副本（与 D 盘工程哈希一致）
 │   ├── sketch_sep8b.ino          # 数据板（同步自 esp32 data）
 │   └── sketch_sep24a.ino         # 联网板（同步自 esp32 network）
-├── miniprogram/                  # 微信小程序（双通道版）
-├── backend/                      # 本地后端（Node.js + SQLite + 看板）
+├── miniprogram/                  # 微信小程序（双通道版，与 E 盘项目一致）
 ├── 引脚说明/                     # 引脚说明书（双板全引脚表+接线+排查）
 └── 基于 ESP32 与巴法云 MQTT...docx  # 设计报告
+
+固件真实位置（D 盘，编译/烧录以这里为准）：
+├── Andriod project\esp32 data\sketch_sep8b\sketch_sep8b.ino      # 数据板
+└── Andriod project\esp32 network\sketch_sep24a\sketch_sep24a.ino # 联网板
 ```
